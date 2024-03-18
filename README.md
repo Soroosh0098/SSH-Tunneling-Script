@@ -53,6 +53,33 @@ bash ssh_tunnel.sh
     
 This command runs the script in the Bash shell environment.
 
+## Example Usage
+
+### Local to Remote Tunnel
+
+1. Select "Local to Remote" tunneling option from the menu.
+2. Enter the local port from which the tunnel will originate.
+3. Provide the remote user's username and the hostname or IP address of the remote machine.
+4. Enter the port on the remote machine to which the tunnel will connect.
+5. Upon successful setup, the script will display a success message confirming the creation of the tunnel.
+   * try to choose same ports for both local and remote servers(your remote server must accept ssh over the choosen port)
+
+### Remote to Local Tunnel
+
+To create a remote-to-local tunnel, follow similar steps as above, but select the "Remote to Local" tunneling option from the menu.
+
+### Both Sides Tunnel
+
+For both sides of the tunnel, select the corresponding option from the menu and provide the required information for both the local-to-remote and remote-to-local connections.
+
+### Killing Existing Tunnels
+
+To terminate existing tunnels, select the "Kill tunnel" option from the menu and enter the local port associated with the tunnel you wish to terminate.
+
+### Exiting the Script
+
+To exit the script, select the "Exit" option from the menu.
+
 ## Contributing
 
 Contributions, bug reports, and suggestions for improvements are welcome! Feel free to open an issue or create a pull request.
